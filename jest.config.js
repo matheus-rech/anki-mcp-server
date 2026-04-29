@@ -6,10 +6,10 @@ export default {
 		"^(\\.{1,2}/.*)\\.js$": "$1",
 	},
 	transform: {
-    "^.+\\.tsx?$": ["ts-jest", { tsconfig: "tsconfig.base.json" }],
 		"^.+\\.tsx?$": [
 			"ts-jest",
 			{
+				tsconfig: "tsconfig.base.json",
 				useESM: true,
 			},
 		],
