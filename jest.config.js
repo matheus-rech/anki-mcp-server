@@ -1,6 +1,5 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} */
 export default {
-	preset: "ts-jest",
 	testEnvironment: "node",
 	extensionsToTreatAsEsm: [".ts"],
 	moduleNameMapper: {
@@ -10,6 +9,7 @@ export default {
 		"^.+\\.tsx?$": [
 			"ts-jest",
 			{
+				tsconfig: "tsconfig.base.json",
 				useESM: true,
 			},
 		],
